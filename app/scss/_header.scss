@@ -1,6 +1,7 @@
 .header {
   nav {
-    padding: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   &__logo {
@@ -21,6 +22,22 @@
     background-image: url(/images/icon-close.svg);
   }
 
+  &__menu {
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white;
+    margin-top: 1.5rem;
+    padding: 1.625rem;
+    border-radius: 5px;
+    a {
+      display: block;
+      padding: 0.625rem;
+      color: $darkBlue;
+      text-align: center;
+    }
+  }
   &__links {
     a {
       position: relative;
@@ -56,13 +73,12 @@
 
 // overlay
 .overlay {
-  animation: fade-in 300ms ease-in-out forwards;
   position: fixed;
   top: 3.8rem;
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient($grayishBlue, transparent);
+  background-image: linear-gradient($darkBlue, transparent);
 }
 
 // Buttons
