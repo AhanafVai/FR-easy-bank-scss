@@ -81,17 +81,6 @@
   background-image: linear-gradient($darkBlue, transparent);
 }
 
-// Buttons
-.button {
-  padding: 0.875rem 2.1875rem;
-  color: aliceblue;
-  background: linear-gradient(to right, $limeGreen, $brightCyan);
-  font-weight: 400;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 // visibility
 .hide-for-mobile {
   @include breakpoint-down(medium) {
