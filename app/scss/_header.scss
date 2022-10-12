@@ -15,8 +15,8 @@
     background-image: url(/images/icon-hamburger.svg);
   }
   &__hamburger-close {
-    width: 1.25rem; // 23px
-    height: 1.19rem; // 11px
+    width: 1.25rem; // 20px
+    height: 1.19rem; // 19px
     background-repeat: no-repeat;
     background-image: url(/images/icon-close.svg);
   }
@@ -52,6 +52,17 @@
       }
     }
   }
+}
+
+// overlay
+.overlay {
+  animation: fade-in 300ms ease-in-out forwards;
+  position: fixed;
+  top: 3.8rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient($grayishBlue, transparent);
 }
 
 // Buttons
